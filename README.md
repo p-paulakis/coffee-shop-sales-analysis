@@ -15,7 +15,7 @@ Analysis of one week of coffee shop sales data to identify revenue trends and pr
 5. What are Friday-specific sales patterns?
 
 ## Key Findings
-- **Total Revenue:** $1,406 for the week
+- **Total Revenue:** £1,406 for the week
 - **Best Seller:** Latte (87 units sold)
 - **Peak Days:** Thursday and Friday generate the highest revenue
 - **Top Rated:** Espresso, Latte, and Sandwich (avg rating > 4.5)
