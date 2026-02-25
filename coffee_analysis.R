@@ -1,18 +1,12 @@
-# ═══════════════════════════════════════════════════════════
+
 # PROJECT 1: COFFEE SHOP SALES ANALYSIS
-# Mini-Project completed: [Your Date]
 # 
 # Purpose: Analyze one week of coffee shop sales to find insights
 # Tools: R, SQL (sqldf), ggplot2
-# ═══════════════════════════════════════════════════════════
 
-# Load libraries
+
 library(tidyverse)
 library(sqldf)
-
-# ═══════════════════════════════════════════════════════════
-# CREATE THE DATA
-# ═══════════════════════════════════════════════════════════
 
 sales <- data.frame(
   sale_id = 1:30,
@@ -32,12 +26,9 @@ sales <- data.frame(
                       4.9, 4.7, 4.8, 4.4, 4.7, 4.9)
 )
 
-# View first few rows
 head(sales)
 
-# ═══════════════════════════════════════════════════════════
 # PART 1: SQL QUERIES (Answering Business Questions)
-# ═══════════════════════════════════════════════════════════
 
 # QUERY 1: Total weekly revenue
 total_revenue <- sqldf("
@@ -85,9 +76,7 @@ friday_sales <- sqldf("
 print("Query 5: Friday Sales")
 print(friday_sales)
 
-# ═══════════════════════════════════════════════════════════
 # PART 2: VISUALIZATIONS
-# ═══════════════════════════════════════════════════════════
 
 # VISUALIZATION 1: Revenue by Day of Week
 viz1_data <- sqldf("
@@ -122,3 +111,4 @@ viz2 <- ggplot(viz2_data, aes(x = product, y = total_quantity)) +
     x = "Product",
     y = "Total Q")
 print(viz2)
+
