@@ -28,7 +28,7 @@ sales <- data.frame(
 
 head(sales)
 
-# PART 1: SQL QUERIES (Answering Business Questions)
+# PART 1: SQL QUERIES 
 
 # QUERY 1: Total weekly revenue
 total_revenue <- sqldf("
@@ -111,4 +111,5 @@ viz2 <- ggplot(viz2_data, aes(x = product, y = total_quantity)) +
     x = "Product",
     y = "Total Q")
 print(viz2)
+
 
